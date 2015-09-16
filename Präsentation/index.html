@@ -46,45 +46,53 @@
 					<h1>CSS</h1>
 					<h3>Basics, Rules, Selectors, Declaration Blocks, Inheritance, Specificity </h3>
 					<p>
-						<small>Created by Christian Beck </small>
+						<small>Christian Beck </small>
 					</p>
 				</section>
 
 				<section data-transition="zoom">
 					<h2>Agenda</h2>
-					<p>
+                    <ul>
+					<span class="fragment"><li>
 						Basics
-					</p>
-					<p>
+					</span></li>
+					<span class="fragment"><li>
 						Rules
-					</p>
-					<p>
+					</span></li>
+					<span class="fragment"><li>
 						Selectors
-					</p>
-					<p>
+					</span></li>
+					<span class="fragment"><li>
 						Declaration Blocks
-					</p>
-					<p>
+					</span></li>
+					<span class="fragment"><li>
 						Inheritance
-					</p>
-					<p>
+					</span></li>
+					<span class="fragment"><li>
 						Specificity
-					</p>
+					</span></li>
+                        </ul>
 				</section>
 
 				<section data-transition="zoom">
-					<h2>Basics 1/2</h2>
-					<p><span class="fragment">
-						CSS wurde entworfen um Darstellungsvorgaben von den Inhalten zu trennen. </p></span>
-					<p>	<span class="fragment">
-						Daher wird in HTML die inhaltliche Gliederung und Bedeutung beschrieben und in CSS- Dateien die Darstellung der Inhalte festgelegt.
-					</p></span>
-                    
+					<h2>Basics</h2>
+                    <ul>
+						<span class="fragment"><li> 
+                            CSS wurde entworfen um Darstellungsvorgaben von den Inhalten zu trennen 
+                            </span></li>
+						<span class="fragment"><li>
+						HTML = inhaltliche Gliederung und Bedeutung
+                            </li></span>
+						<span class="fragment"><li>
+						CSS =  Darstellung der Inhalte
+                           </li> </span>
+					</ul>
+					
  
 				</section>
                 <section data-markdown data-transition="zoom">
                 <script type="text/template">
-                    ## Basics 2/2
+                    ## Basics
 
                 <link rel="stylesheet" href="css/reveal.css">
                 
@@ -96,14 +104,12 @@
 
 				<section data-transition="zoom">
 					<h2>Rules</h2>
-					<p><span class="fragment">
-						In CSS sind Eigenschaften innerhalb von Regelsätzen organisiert.</p></span>
-					<p><span class="fragment">
-						Solch ein Regelsatz besteht aus einem oder mehreren Selektoren und einen begrenzten Bereich in dem ein Wert zugewiesen ist.
-					</p></span>
-						<p><span class="fragment">
-							z.B.
-						</p></span>
+                    <ul>
+					<span class="fragment"><li>
+                       Eigenschaften sind innerhalb von Regelsätzen organisiert</span></li>
+                    <span class="fragment"><li>
+						Ein Regelsatz besteht aus einem/mehreren Selektoren und einem begrenzten Bereich in dem ein Wert zugewiesen ist
+                    </span></li></ul>
 						<p><span class="fragment">
 							Selektor {Eigenschaft:Wert;}
 						</p></span>
@@ -116,93 +122,97 @@
 
 				<section data-transition="zoom">
 					<h2>Selectors</h2>
-					<p><span class="fragment">
-						Selektoren werden dazu verwendet, bestimmt Elemente in einem HTML-Dokument auszuwählen. </p></span>
-						<p><span class="fragment">
-							Auf diese weise können dann bestimmte Eigenschaften angewendet werden.
-					</p></span>
-					<p><span class="fragment">
+                    <ul>
+					<span class="fragment"><li>
+                        Über Selektoren werden bestimmte Elemente in einem HTML-Dokument ausgewählt 
+                        </span></li>
+						<span class="fragment"><li>
+							Auf diese Elemente können bestimmte Eigenschaften angewandt werden
+					</span></li>
+					<span class="fragment"><li>
 						Z.B. <strong><font color=red>body </strong></font>{background-color:red;}
-					</p></span>
-					<p><span class="fragment">
-						In diesem Beispiel wird vom body der HTML-Datei der Hintergrund rot.
-					</p></span>
+					</span></li>
+					<span class="fragment"><li>
+						In diesem Beispiel wird vom body der HTML-Datei der Hintergrund rot
+					</span></li>
+                    </ul>
 
 				</section>
 
 				<section data-transition="zoom">
 					<h2>Declaration Blocks</h2>
-					<p><span class="fragment">
-						Jede Deklaration besteht aus einer Eigenschaft und einem Wert.
-					</p></span>
-						<p><span class="fragment">
-							Ein Deklarationsblock umfasst den gesamten Teil einer Regel, welcher hinter den Selektoren liegt.
-						</p></span>
-						<p><span class="fragment">
+                    <ul>
+					<span class="fragment"><li>
+						Jede Deklaration besteht aus einer Eigenschaft und einem Wert
+					</span></li>
+						<span class="fragment"><li>
+							Ein Deklarationsblock umfasst den gesamten Teil einer Regel hinter dem Selektor
+						</span></li>
+						<span class="fragment"><li>
 							Z.B. body <strong><font color=red>{background-color:red;}</strong></font>
-						</p></span>
-						<p><span class="fragment">
-							Man kann auch leere Deklarationen nutzen, damit dieses HTML-Element keine Formatierung bekommt.
-						</p></span>
+						</span></li>
+						<span class="fragment"><li>
+							Man kann auch leere Deklarationen nutzen
+						</span></li>
+
+                    </ul>
 
 				</section>
 
 				<section data-transition="zoom">
 					<h2>Inheritance</h2>
-					<p><span class="fragment">
-							Vererbung macht ein Stylesheet übersichtlicher.
-					</p></span>
-					<p><span class="fragment">
-							Ein gutes Beispiel wäre hierfür die Vererbung der Schriftfarbe.
-						</p></span>
-					<p><span class="fragment">
-						body {font-family: Arial, Helvetica, sans-serif;}
-					</p></span>
-					<p><span class="fragment">
+                    <ul>
+                        <span class="fragment"><li>
+							Vererbung macht ein Stylesheet übersichtlicher
+					</span></li>
+					<span class="fragment"><li>
+							Ein gutes Beispiel wäre hierfür die Vererbung der Schrift
+						</span></li>
+					<span class="fragment"><li>
+						p {font-family: Arial, Helvetica, sans-serif;}
+					</span></li>
+					<span class="fragment"><li>
 							Dadurch wird es einfacher einzelne Styles für alle Deklarationsblöcke zu übernehmen.
-					</p></span>
+					</span></li>
+                    </ul>
+					
 
 				</section>
 
 				<section data-transition="zoom">
-					<h2>Specificity 1/3</h2>
-					<p><span class="fragment">
-							Sobald Stylesheets zu lang werden, wird es schnell mal unübersichtlich und manche Elemente werden mit mehreren CSS-Regeln belegt.
-					</p></span>
-					<p><span class="fragment">
-							Spezifität ist ein Mittel, mit dem ein Browser bestimmt, welche Eigenschaftswerte die relevantesten für ein Element sind.
-					</p></span>
-					<p><span class="fragment">
-							Dies basiert auf den Matchingregeln, welche durch die verschiedenen Selektoren gebildet werden.
-					</p></span>
-
+					<h2>Specificity</h2>
+                    <ul>
+					<span class="fragment"><li>
+							Sobald Stylesheets zu lang werden wird diese schnell unübersichtlich
+					</span></li>
+                    <span class="fragment"><li>
+							Das führt dazu, dass manche Elemente mit mehreren CSS-Regeln belegt werden
+					</span></li>
+					<span class="fragment"><li>
+							Durch ein Punktestystem bestimmt ein Browser, welche Eigenschaftswerte die relevantesten für ein Element sind
+					</span></li>
+					
+                </ul>
 				</section>
 
 				<section data-transition="zoom">
-					<h2>Specificity 2/3</h2>
-					<p><span class="fragment">
-							Hier wird die Anzahl jedes Selektortyps berechnet, dabei gewinnt der mit den meisten Punkten.
-					</p></span>
-					<p><span class="fragment">
-							Sollte es zu einer Spezifitätgleichheit kommen, so wird die letzte im CSS gefundene Deklaration für das Element angewannt.
-					</p></span>
-					<p><span class="fragment">
-							Ein Beispiel für so ein Auswahlverfahren:
-					</p></span>
-					<p><span class="fragment">
-							body ist ein Typ der 1 Punkt bringt
-						</p></span>
-						<p><span class="fragment">
-							#ID ist eine ungebundene ID welche 100 Punkte bringt
-					</p></span>
-					<p><span class="fragment">
-						Daher gewinnt die ID.
-					</p></span>
-
+					<h2>Specificity</h2>
+                    <ul>
+                        <span class="fragment"><li>
+							Dies basiert auf Matchingregeln, welche durch die verschiedenen Selektoren gebildet werden
+					</span></li>
+					<span class="fragment"><li>
+							Die Anzahl jedes Selektortyps wird berechnet
+					</span></li>
+					<span class="fragment"><li>
+							Bei Spezifitätgleichheit wird die letzte im CSS gefundene Deklaration für das Element angewannt
+                        </span></li>
+					
+                    </ul>
 				</section>
 
 				<section data-transition="zoom">
-					<h2>Specificity 3/3</h2>
+					<h2>Specificity</h2>
 					<p>
 						Die Punkteverteilung zum leichteren Verständnis:
 					</p>
@@ -238,7 +248,56 @@
 						</tbody>
 					</table>
 				</section>
+                <section>
 
+					<h2>Demo</h2>
+                    
+                    <p> <span class="fragment">
+                    	Eine einfache HTML Seite ohne CSS:
+                    	</p><span>
+                        <span class="fragment">
+                        	<img data-src="http://img5.fotos-hochladen.net/uploads/html19wgosmx58r.png">
+                        	</span>
+                        </section>
+                        
+                        
+                        <section data-markdown data-transition="zoom">
+                            <script type="text/template">
+                            ## Demo
+                            
+                    
+                    //CSS-Datei//
+                    body{
+                        background-color: beige
+                    }
+                    p{
+                        margin-left:100px;
+                        margin-top:100px;
+                        color:red;
+                        font-size:3em;
+                        font-weight:bold;
+                        font-family:cursive
+                    }
+                            
+
+                    
+                </script>
+                    
+                    
+                    </section>
+                        
+                        <section>
+                            <h2>Demo</h2>
+                            <p> <span class="fragment">
+                            	Die gleiche HTML Seite mit CSS:</p>
+                            	<span>
+                        <span class="fragment">
+                        	<img data-src="http://img5.fotos-hochladen.net/uploads/html2nrlah6fe3v.png">
+                        	</span>
+
+
+                        
+				</section>
 				<section>
 
 					<h1>Ende</h1>
@@ -283,3 +342,4 @@
 
 	</body>
 </html>
+
